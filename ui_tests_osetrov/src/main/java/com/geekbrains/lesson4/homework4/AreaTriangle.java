@@ -6,7 +6,7 @@ public class AreaTriangle {
             throw new Exception("Некорректное значение длины стороны треугольника!");
         }
         double halfmeterP  = (sideA + sideB + sideC) / 2;
-        double square = (halfmeterP * (halfmeterP - sideA) + (halfmeterP - sideB) * (halfmeterP - sideC));
+        double square = (halfmeterP * (halfmeterP - sideA) * (halfmeterP - sideB) * (halfmeterP - sideC));
         return Math.sqrt(square);
 
     }
